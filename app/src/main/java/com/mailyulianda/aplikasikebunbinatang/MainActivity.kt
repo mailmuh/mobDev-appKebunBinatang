@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity() {
                 myView.txtDesc.text = binatang.deskripsi!!
                 myView.imgGambarBinatangBuas.setImageResource(binatang.gambar!!)
                 myView.imgGambarBinatangBuas.setOnClickListener {
+
                     val intent = Intent(context, DetailBinatang::class.java)
                     intent.putExtra("nama", binatang.nama!!)
                     intent.putExtra("deskripsi", binatang.deskripsi!!)
@@ -81,6 +82,7 @@ class MainActivity : AppCompatActivity() {
                 myView.txtDesc.text = binatang.deskripsi!!
                 myView.imgGambarBinatang.setImageResource(binatang.gambar!!)
                 myView.imgGambarBinatang.setOnClickListener {
+
                     val intent = Intent(context, DetailBinatang::class.java)
                     intent.putExtra("nama", binatang.nama!!)
                     intent.putExtra("deskripsi", binatang.deskripsi!!)

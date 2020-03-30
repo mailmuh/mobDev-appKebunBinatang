@@ -11,9 +11,10 @@ class DetailBinatang : AppCompatActivity() {
         setContentView(R.layout.activity_detail_binatang)
 
         val bundle = intent.extras
-
-        ivBinatang.setImageResource(bundle.getInt("gambar"))
-        tvNama.text = bundle.getString("nama")
-        tvDeskripsi.text = bundle.getString("deskripsi")
+        if (bundle != null) {
+            ivBinatang.setImageResource(bundle.getInt("gambar"))
+            tvNama.text = bundle.getString("nama")
+            tvDeskripsi.text = bundle.getString("deskripsi")
+        }
     }
 }
